@@ -65,3 +65,4 @@ We can write to the file using `.write()`
 
 # Working dirs and paths
 Python uses relative paths. The place where you run the scripts will be where it will try to file the file you're trying to open.
+Just use the full path...
