@@ -13,4 +13,3 @@ Not recommended by python
 # Comments
 In python, the only way to write comments is: `# blablabla`
 
-

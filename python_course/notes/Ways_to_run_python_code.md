@@ -14,3 +14,4 @@
 
 ## Terminal
 * You can enter CLI IDLE by simply running "`python3`"
+

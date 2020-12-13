@@ -9,6 +9,7 @@ We can use id() to check if two vars point to the same location (the same value 
     a is b -> False 
     a == b -> True
                 
+                
 ```
 In this case, they both hold the same value but don't have the same location in memory so "is" returns false.
 ### Special cases:
