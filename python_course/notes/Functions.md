@@ -23,3 +23,48 @@ An argument is the value passed when calling the function. Ex.:
     
     my_func(argument)
 ```
+## Keyword arguments
+Passing args as keyword args prevents errors from not passing the args in the right order (positional arguments errors)
+Ex.:
+```python
+    def greet(name, age, gender):
+        print(f"Hi {name}, you are {age} and you are a {gender}.")
+    greet(age=24, gender="male", name="ced")
+```
+
+## *args
+`*` is called the unpacking operator.
+`*args` will let us provide any numbers of arguments.
+Using `*`, python will save all of the given arguments in a tuple. Ex.:
+```python
+    def my_func(*args):
+        print(args)
+    my_func() # will work
+    my_func(1,2,3,4,5,6) # will work
+```
+
+## **kwargs
+`**kwargs` or `Keyword Arguments`, will let us pass any number of arguments with a given keyword.
+
+It will also unpack all of the arguments in a dictionary (how fucking neat!)\
+Ex.:
+```python
+    def my_func(**kwargs):
+        print(kwargs["-l"]) # will print the value of key -l
+        print(kwargs["-a"]) # will print the value of key -a
+```
+
+## Default argument values
+We can set default values by passing values in the parameters section of the function. Ex.:
+```python
+    def my_func(arg1="1", arg2="2"):
+        print(arg1, arg2)
+    my_func()
+```
+
+# Return
+We can return multiple values using:
+
+`return val1, val2, val3`
+
+It will then return a tuple.
